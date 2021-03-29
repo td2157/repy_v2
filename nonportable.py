@@ -213,7 +213,7 @@ def getruntime():
     runtimelock.release()
     
     # Time.clock returns elapsedtime since the first call to it, so this works for us
-    return time.pref_counter()
+    return time.perf_counter()
      
   # Who knows...  
   else:
